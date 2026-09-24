@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #1a365d;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #2b6cb0;
+    margin-top: 10px;
+}
+
+h3 {
+    color: #4a5568;
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d2d6dc;
+    margin: 30px 0;
+}
+
+#intro {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.about-columns {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.about-col {
+    flex: 1;
+}
+
+#intro img {
+    border-radius: 50%;
+    border: 3px solid #2b6cb0;
+    object-fit: cover;
+}
+
+button {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1a365d;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.skills-container {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.skill-item {
+    background-color: #ffffff;
+    border: 1px solid #060607;
+    padding: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
