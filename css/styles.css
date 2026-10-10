@@ -231,3 +231,16 @@ section {
     font-family: inherit; /* Matches the text to your body font */
     font-size: 14px;
 }
+
+/* Textarea specific rule so users can only resize it vertically */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Highlight the borders in blue when the user clicks inside an input */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2b6cb0;
+    box-shadow: 0 0 5px rgba(43, 108, 176, 0.3);
+}
