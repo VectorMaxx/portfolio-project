@@ -123,3 +123,30 @@ li {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+
+/* Education & Experience Table Styles */
+.resume-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+    
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.resume-table thead tr {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    text-align: left;
+}
+
+.resume-table th,
+.resume-table td {
+    padding: 15px;
+    border: 2px solid #1e2725;
+}
+
+.resume-table tbody tr {
+    border-bottom: 1px solid #d2d6dc;
+}
