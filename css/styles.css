@@ -199,3 +199,23 @@ section {
     background-color: #1a365d; /* Dark blue hover effect */
 }
 
+/* Contact Form Styles */
+.contact-form-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #d2d6dc;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block; /* Puts the label on its own line above the input */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4a5568;
+}
