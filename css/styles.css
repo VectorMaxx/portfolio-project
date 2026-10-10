@@ -180,3 +180,21 @@ section {
     justify-content: space-around; /* Spaces links evenly */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+
+#navbar li {
+    margin: 0;
+}
+
+#navbar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none; /* Removes the underline */
+    padding: 15px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+#navbar a:hover {
+    background-color: #1a365d; /* Dark blue hover effect */
+}
