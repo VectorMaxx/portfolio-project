@@ -271,28 +271,109 @@ section {
     }
 }
 
+/* Hide hamburger elements on desktop screens */
+#menu-toggle,
+.hamburger,
+.menu-overlay {
+    display: none;
+}
+
+/* Tablet Devices (768px and below) */
+@media (max-width: 768px) {
+    /* Show the top-left hamburger button inside the navbar */
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px 15px;
+    }
+
+    .hamburger {
+        display: block;
+        color: #ffffff;
+        font-size: 26px;
+        cursor: pointer;
+        user-select: none;
+        z-index: 1002; /* Keeps icon above the sliding panel */
+        padding: 2px 8px;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+    }
+
+    .hamburger:hover {
+        background-color: #1a365d;
+    }
+
+    /* Position the nav menu off-screen to the left */
+    #navbar ul {
+        position: fixed;
+        top: 0;
+        left: -260px; /* Hidden off the left edge */
+        width: 250px;
+        height: 100vh;
+        background-color: #1a365d;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 70px; /* Leaves room for the top-left hamburger icon */
+        box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
+        transition: left 0.3s ease; /* Smooth slide to the right */
+        z-index: 1001;
+    }
+
+    #navbar li {
+        width: 100%;
+    }
+
+    #navbar a {
+        padding: 15px 25px;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Slide the menu to the right when hamburger is clicked */
+    #menu-toggle:checked ~ ul {
+        left: 0;
+    }
+
+    /* Dim the rest of the page when the menu is open */
+    #menu-toggle:checked ~ .menu-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1000;
+    }
+
+    /* Reduce cards from 3 columns to 2 */
+    .skills-container, .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Stack the About section columns vertically */
+    .about-columns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Allow the table to scroll horizontally */
+    #experience {
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .resume-table {
+        min-width: 550px;
+    }
+}
+
 /* Mobile Phones (480px and below) */
 @media (max-width: 480px) {
     /* Reduce cards to a single column */
     .skills-container, .projects-container {
         grid-template-columns: 1fr;
-    }
-
-    /* Stack navigation links vertically for easier tapping */
-    #navbar ul {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    #navbar a {
-        text-align: center;
-        padding: 12px;
-        border-radius: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    #navbar li:last-child a {
-        border-bottom: none;
     }
 
     /* Scale down headings to fit small screens */
