@@ -244,3 +244,69 @@ section {
     border-color: #2b6cb0;
     box-shadow: 0 0 5px rgba(43, 108, 176, 0.3);
 }
+
+
+/* Activity 8: Responsive Design */
+/* Tablet Devices (768px and below) */
+@media (max-width: 768px) {
+    /* Reduce cards from 3 columns to 2 */
+    .skills-container, .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Stack the About section columns vertically */
+    .about-columns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Allow the table to scroll horizontally instead of breaking the page layout */
+    #experience {
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .resume-table {
+        min-width: 550px; /* Forces scroll if the screen is narrower than the table content */
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    /* Reduce cards to a single column */
+    .skills-container, .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stack navigation links vertically for easier tapping */
+    #navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #navbar a {
+        text-align: center;
+        padding: 12px;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #navbar li:last-child a {
+        border-bottom: none;
+    }
+
+    /* Scale down headings to fit small screens */
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    /* Adjust general padding for mobile screens */
+    body {
+        padding: 0 15px;
+        margin: 15px auto;
+    }
+}
