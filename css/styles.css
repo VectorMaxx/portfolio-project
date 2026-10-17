@@ -245,32 +245,30 @@ section {
     box-shadow: 0 0 5px rgba(43, 108, 176, 0.3);
 }
 
-
-/* Activity 8: Responsive Design */
-/* Tablet Devices (768px and below) */
-@media (max-width: 768px) {
-    /* Reduce cards from 3 columns to 2 */
-    .skills-container, .projects-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    /* Stack the About section columns vertically */
-    .about-columns {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    /* Allow the table to scroll horizontally instead of breaking the page layout */
-    #experience {
-        overflow-x: auto;
-        padding-bottom: 10px;
-    }
-    
-    .resume-table {
-        min-width: 550px; /* Forces scroll if the screen is narrower than the table content */
-    }
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #4a5568;
+    font-size: 14px;
 }
 
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #1a365d;
+}
+
+/* Activity 8: Responsive Design */
 /* Hide hamburger elements on desktop screens */
 #menu-toggle,
 .hamburger,
