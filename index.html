@@ -8,11 +8,13 @@
 </head>
 <body>
 
-    <!-- Navigation Menu -->
+    <!-- ========== Activity 6: Navigation Menu ========== -->
     <nav id="navbar">
+        <!-- Activity 8: Hamburger toggle (only shown on tablet and mobile) -->
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">&#9776;</label>
         
+        <!-- Activity 6: Anchor links that jump to each section's id -->
         <ul>
             <li><a href="#intro">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -22,7 +24,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <!-- Dark background overlay when menu is open (click outside to close) -->
+        <!-- Activity 8: Dark background overlay when menu is open (click outside to close) -->
         <label for="menu-toggle" class="menu-overlay"></label>
     </nav>
 
@@ -103,7 +105,7 @@
 
     <hr>
 
-    <!-- Projects Section -->
+    <!-- ========== Activity 4: Projects Section ========== -->
     <section id="projects">
         <h2>My Projects</h2>
 
@@ -139,7 +141,7 @@
 
     <hr>
 
-    <!-- Education and Experience Section -->
+    <!-- ========== Activity 5: Education and Experience Section ========== -->
     <section id="experience">
         <h2>Education & Experience</h2>
         
@@ -173,7 +175,7 @@
 
     <hr>
 
-    <!-- Contact Section -->
+    <!-- ========== Activity 7: Contact Section ========== -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Interested in working together? Fill out the form below to send me a message.</p>
@@ -210,12 +212,13 @@
 
     <hr>
 
-    <!-- Footer -->
+    <!-- ========== Activity 9: Footer ========== -->
     <footer>
         <p>&copy; 2026 Russel Pilan. All rights reserved.</p>
         <p><a href="#intro">Back to Top &uarr;</a></p>
     </footer>
     
+    <!-- ========== Activity 8: Close the mobile menu after a link is clicked ========== -->
     <script>
         document.querySelectorAll('#navbar a').forEach(link => {
             link.addEventListener('click', () => {

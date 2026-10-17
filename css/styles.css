@@ -93,7 +93,9 @@ li {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Added Projects Section Styles */
+/* ==========================================
+   Activity 4: Projects Section
+   ========================================== */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -124,7 +126,9 @@ li {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Education & Experience Table Styles */
+/* ==========================================
+   Activity 5: Education & Experience Table
+   ========================================== */
 .resume-table {
     width: 100%;
     border-collapse: collapse;
@@ -150,6 +154,10 @@ li {
 .resume-table tbody tr {
     border-bottom: 1px solid #d2d6dc;
 }
+
+/* ==========================================
+   Activity 6: Navigation Menu
+   ========================================== */
 
 /* Enable smooth scrolling for the entire page */
 html {
@@ -199,7 +207,9 @@ section {
     background-color: #1a365d; /* Dark blue hover effect */
 }
 
-/* Contact Form Styles */
+/* ==========================================
+   Activity 7: Contact Form
+   ========================================== */
 .contact-form-container {
     background-color: #ffffff;
     padding: 25px;
@@ -245,7 +255,9 @@ section {
     box-shadow: 0 0 5px rgba(43, 108, 176, 0.3);
 }
 
-/* Footer Styles */
+/* ==========================================
+   Activity 9: Footer
+   ========================================== */
 footer {
     text-align: center;
     padding: 20px 0;
@@ -268,7 +280,10 @@ footer a:hover {
     color: #1a365d;
 }
 
-/* Activity 8: Responsive Design */
+/* ==========================================
+   Activity 8: Responsive Design
+   ========================================== */
+
 /* Hide hamburger elements on desktop screens */
 #menu-toggle,
 .hamburger,
