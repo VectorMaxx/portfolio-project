@@ -26,7 +26,6 @@
         <label for="menu-toggle" class="menu-overlay"></label>
     </nav>
 
-
     <!-- Introduction Section -->
     <section id="intro">
         <img src="images/profile-example.jpg" alt="Profile Photo" width="100" height="100">
@@ -213,5 +212,16 @@
 
     <!-- ACTIVITY 8 -->
 
+
+    <!-- ACTIVITY 9 -->
+
+    
+    <script>
+        document.querySelectorAll('#navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
+    </script>
 </body>
 </html>
